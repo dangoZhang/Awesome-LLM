@@ -8,8 +8,11 @@ serve, evaluate, and use LLMs.
 
 Last refreshed and latestness-checked: 2026-06-28.
 
+Long-form technical map: [LLM Wiki](https://dangozhang.github.io/Awesome-LLM/).
+
 ## Table of Contents
 
+- [LLM Wiki](#llm-wiki)
 - [Curation Rules](#curation-rules)
 - [Recent Surveys and Maps](#recent-surveys-and-maps)
 - [Frontier Model Reports and Cards](#frontier-model-reports-and-cards)
@@ -26,6 +29,16 @@ Last refreshed and latestness-checked: 2026-06-28.
 - [Subfield Lists](#subfield-lists)
 - [Latestness Audit](#latestness-audit)
 - [Refresh Notes](#refresh-notes)
+
+## LLM Wiki
+
+The README stays as the compact index. The longer five-track wiki now lives in
+this repository under [`docs/`](docs/) and is published through GitHub Pages:
+
+- [LLM Wiki site](https://dangozhang.github.io/Awesome-LLM/)
+- [Five-year milestone map](docs/milestones.md)
+- [Training](docs/training/index.md), [Data](docs/data/index.md), [Evaluation](docs/evaluation/index.md), [Infra](docs/infra/index.md), [Agent](docs/agents/index.md)
+- [Technical report source index](docs/sources.md)
 
 ## Curation Rules
 

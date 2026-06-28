@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">LLM technology stack map</title>
+  <desc id="desc">Five tracks: training, data, evaluation, infrastructure, and agents.</desc>
+  <rect width="960" height="540" fill="#f8fafc"/>
+  <rect x="64" y="54" width="832" height="432" rx="24" fill="#ffffff" stroke="#d8dee8" stroke-width="2"/>
+  <text x="96" y="112" font-family="Inter,Arial,sans-serif" font-size="34" font-weight="700" fill="#111827">LLM Wiki 技术栈</text>
+  <text x="96" y="150" font-family="Inter,Arial,sans-serif" font-size="18" fill="#64748b">训练、数据、评测、Infra、Agent 五条主线</text>
+  <g font-family="Inter,Arial,sans-serif" font-size="20" font-weight="700" fill="#111827">
+    <rect x="96" y="202" width="140" height="74" rx="16" fill="#dff3ea"/>
+    <text x="132" y="247">训练</text>
+    <rect x="254" y="202" width="140" height="74" rx="16" fill="#f7edc8"/>
+    <text x="290" y="247">数据</text>
+    <rect x="412" y="202" width="140" height="74" rx="16" fill="#dceaf7"/>
+    <text x="448" y="247">评测</text>
+    <rect x="570" y="202" width="140" height="74" rx="16" fill="#f6e3e5"/>
+    <text x="609" y="247">Infra</text>
+    <rect x="728" y="202" width="140" height="74" rx="16" fill="#e7e2f5"/>
+    <text x="765" y="247">Agent</text>
+  </g>
+  <g stroke="#0f766e" stroke-width="3" fill="none" opacity="0.55">
+    <path d="M166 282 C210 342, 286 342, 324 282"/>
+    <path d="M324 282 C368 342, 444 342, 482 282"/>
+    <path d="M482 282 C526 342, 602 342, 640 282"/>
+    <path d="M640 282 C684 342, 760 342, 798 282"/>
+  </g>
+  <g font-family="Inter,Arial,sans-serif" font-size="16" fill="#334155">
+    <text x="112" y="350">Scaling</text>
+    <text x="112" y="378">Post-training</text>
+    <text x="112" y="406">Reasoning RL</text>
+    <text x="270" y="350">Web data</text>
+    <text x="270" y="378">Synthetic data</text>
+    <text x="270" y="406">Preference data</text>
+    <text x="428" y="350">Benchmarks</text>
+    <text x="428" y="378">Arenas</text>
+    <text x="428" y="406">Regression evals</text>
+    <text x="586" y="350">Training stack</text>
+    <text x="586" y="378">Serving stack</text>
+    <text x="586" y="406">Kernels</text>
+    <text x="744" y="350">Tool use</text>
+    <text x="744" y="378">Coding agents</text>
+    <text x="744" y="406">Agentic RAG</text>
+  </g>
+</svg>
+
