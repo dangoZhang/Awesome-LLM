@@ -22,7 +22,7 @@
 
 - (2022-04) **Super-NaturalInstructions: Generalization via Declarative Instructions on 1600+ NLP Tasks** [paper](https://arxiv.org/abs/2204.07705)
 
-- (20220-10) **Scaling Instruction-Finetuned Language Models**  [paper](https://arxiv.org/pdf/2210.11416.pdf)
+- (2022-10) **Scaling Instruction-Finetuned Language Models**  [paper](https://arxiv.org/pdf/2210.11416.pdf)
 
   > Flan-T5/PaLM
 
