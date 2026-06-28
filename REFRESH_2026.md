@@ -1,7 +1,7 @@
 # 2026 Refresh Notes
 
 This fork trims the original README and rebalances it toward work that still
-helps readers act in 2026.
+helps readers act in 2026. A second latestness audit was run on 2026-06-28.
 
 ## Removal Rationale
 
@@ -33,6 +33,10 @@ helps readers act in 2026.
   Qwen3-Coder-Next, Qwen3-VL/Omni, Kimi K2/K2.5, GLM-4.5/5, Gemma 3,
   OLMo 2/3, MiniMax-01/M1, Mistral Small/Magistral/Ministral, Nemotron,
   Command A/A+, Seed1.5, and Hunyuan-A13B.
+- Added newer items found in the second latestness audit: GPT-5.5/5.6,
+  Claude Fable 5/Mythos 5, Gemini 3.5, Gemma 4, Grok 4.3/Grok Build,
+  Qwen3.5/3.6, Kimi K2.6, GLM-5.1/5.2, Mistral Small 4/Medium 3.5,
+  Nemotron 3 Ultra, MiniMax M2/M2.5, Seed1.6, and Seed2.0.
 - Added proprietary model-card/system-card references for OpenAI GPT/o-series,
   Anthropic Claude 4.x, Google Gemini 2.5/3.x, and xAI Grok 4.x.
 - Added modern reasoning and post-training resources: open-r1, TinyZero, GRPO,

@@ -6,7 +6,7 @@ This fork keeps the historical backbone, removes much of the early ChatGPT-era
 sprawl, and adds the recent model reports that actually changed how people build,
 serve, evaluate, and use LLMs.
 
-Last refreshed: 2026-06-28.
+Last refreshed and latestness-checked: 2026-06-28.
 
 ## Table of Contents
 
@@ -24,6 +24,7 @@ Last refreshed: 2026-06-28.
 - [Application Frameworks](#application-frameworks)
 - [Courses and Books](#courses-and-books)
 - [Subfield Lists](#subfield-lists)
+- [Latestness Audit](#latestness-audit)
 - [Refresh Notes](#refresh-notes)
 
 ## Curation Rules
@@ -59,19 +60,28 @@ evaluations, tool-use behavior, and release decisions.
 | OpenAI | [GPT-4 Technical Report](https://arxiv.org/abs/2303.08774) | Historical frontier-model baseline. |
 | OpenAI | [GPT-4.5 System Card](https://openai.com/index/gpt-4-5-system-card/) | Scaling-era system card with capability and safety evaluation details. |
 | OpenAI | [o3 and o4-mini System Card](https://openai.com/index/o3-o4-mini-system-card/) | Reasoning, vision, tool-use, and preparedness evaluations. |
-| OpenAI | [GPT-5 System Card](https://cdn.openai.com/gpt-5-system-card.pdf) | Current OpenAI generation described through main/thinking model families. |
-| OpenAI | [GPT-5.4 release](https://openai.com/index/introducing-gpt-5-4/) | Recent benchmark and capability disclosure for coding, tools, long context, and research tasks. |
+| OpenAI | [GPT-5 System Card](https://cdn.openai.com/gpt-5-system-card.pdf) | Baseline GPT-5 generation described through main/thinking model families. |
+| OpenAI | [GPT-5.4 release](https://openai.com/index/introducing-gpt-5-4/) | GPT-5 series benchmark and capability disclosure for coding, tools, long context, and research tasks. |
+| OpenAI | [GPT-5.5 System Card](https://openai.com/index/gpt-5-5-system-card/) | Later GPT-5 series model for complex tool-using work. |
+| OpenAI | [GPT-5.6 Preview System Card](https://deploymentsafety.openai.com/gpt-5-6-preview) | Latest checked OpenAI preview family: Sol, Terra, and Luna. |
+| OpenAI | [Previewing GPT-5.6 Sol](https://openai.com/index/previewing-gpt-5-6-sol/) | Latest OpenAI capability preview for coding, science, and cybersecurity. |
 | Anthropic | [Claude Opus 4 and Sonnet 4 System Card](https://www.anthropic.com/claude-4-system-card) | Hybrid reasoning models with coding, computer-use, tool-use, and safety evaluation detail. |
 | Anthropic | [Claude Sonnet 4.5 System Card](https://www.anthropic.com/claude-sonnet-4-5-system-card) | Major coding/agentic system-card reference. |
-| Anthropic | [Claude system cards index](https://www.anthropic.com/system-cards) | Best entry point for newer Claude 4.x system cards. |
+| Anthropic | [Claude Fable 5 and Mythos 5](https://www.anthropic.com/news/claude-fable-5-mythos-5) | Latest checked Anthropic frontier release. |
+| Anthropic | [Claude Fable 5 and Mythos 5 System Card](https://www-cdn.anthropic.com/d00db56fa754a1b115b6dd7cb2e3c342ee809620.pdf) | Safety and capability report for the June 2026 Fable/Mythos release. |
+| Anthropic | [Claude system cards index](https://www.anthropic.com/system-cards) | Best entry point for newer Claude 4.x/5.x system cards. |
 | Google DeepMind | [Gemini 2.5 report](https://storage.googleapis.com/deepmind-media/gemini/gemini_v2_5_report.pdf) | Reasoning and multimodal model report for Gemini 2.x. |
 | Google DeepMind | [Gemini 3 Pro Model Card](https://deepmind.google/models/model-cards/gemini-3-pro/) | Official model-card entry for Gemini 3 family. |
 | Google DeepMind | [Gemini 3.1 Pro Model Card](https://deepmind.google/models/model-cards/gemini-3-1-pro/) | Multimodal reasoning, long-context, and agentic-task disclosure. |
 | Google DeepMind | [Gemini 3.1 Pro evaluation methodology](https://deepmind.google/models/evals-methodology/gemini-3-1-pro) | Evaluation details separated from the model card. |
+| Google DeepMind | [Gemini 3.5](https://deepmind.google/blog/gemini-3-5-frontier-intelligence-with-action/) | Latest checked Gemini family launch, starting with 3.5 Flash. |
+| Google DeepMind | [Gemini 3.5 Flash](https://deepmind.google/models/gemini/flash/) | Agentic, coding, and long-horizon Flash model. |
 | xAI | [Grok 4 Model Card](https://data.x.ai/2025-08-20-grok-4-model-card.pdf) | Reasoning and tool-use model card. |
 | xAI | [Grok 4 Fast Model Card](https://data.x.ai/2025-09-19-grok-4-fast-model-card.pdf) | Cost-efficient reasoning model card. |
 | xAI | [Grok Code Fast 1 Model Card](https://data.x.ai/2025-08-26-grok-code-fast-1-model-card.pdf) | Coding-agent model card. |
-| xAI | [Grok 4.1 Model Card](https://data.x.ai/2025-11-17-grok-4-1-model-card.pdf) | Later Grok 4.x behavior and safety update. |
+| xAI | [Grok 4.1 Model Card](https://data.x.ai/2025-11-17-grok-4-1-model-card.pdf) | Earlier Grok 4.x behavior and safety update. |
+| xAI | [Grok 4.3](https://docs.x.ai/developers/models/grok-4.3) | Latest checked xAI flagship API model; 1M context and configurable reasoning. |
+| xAI | [Grok Build 0.1](https://docs.x.ai/overview) | Current xAI coding-agent model listed in official docs. |
 
 ## Open and Open-Weight Model Reports
 
@@ -80,35 +90,51 @@ evaluations, tool-use behavior, and release decisions.
 | DeepSeek | [DeepSeek-V3 Technical Report](https://arxiv.org/abs/2412.19437) | MLA, DeepSeekMoE, auxiliary-loss-free load balancing, multi-token prediction. |
 | DeepSeek | [DeepSeek-R1](https://arxiv.org/abs/2501.12948) | Public reference for RL-driven reasoning models. |
 | DeepSeek | [DeepSeek-V4 Preview](https://arxiv.org/html/2606.19348v1) | Million-token context, hybrid attention, MoE scaling, Muon optimizer. |
+| DeepSeek | [DeepSeek-V4 official release note](https://api-docs.deepseek.com/news/news260424) | Confirms V4 Preview availability and open-source release. |
 | Qwen | [Qwen3 Technical Report](https://arxiv.org/abs/2505.09388) | Dense and MoE family, thinking/non-thinking modes, multilingual coverage. |
 | Qwen | [Qwen3-Next](https://qwen.ai/blog?from=research.latest-advancements-list&id=4074cca80393150c248e508aa62983f9cb7d27cd) | Hybrid attention and efficiency-oriented Qwen line. |
 | Qwen | [Qwen3-Coder-Next Technical Report](https://arxiv.org/abs/2603.00729) | Small-active-parameter coding-agent model trained with executable environments. |
 | Qwen | [Qwen3-Max](https://qwen.ai/blog?id=qwen3-max) | 1T+ parameter proprietary Qwen release note. |
+| Qwen | [Qwen3.5 and Qwen3.6](https://github.com/QwenLM/Qwen3.6) | Latest checked Qwen open-weight family, with April 2026 Qwen3.6 releases. |
 | Moonshot AI | [Kimi K2](https://arxiv.org/abs/2507.20534) | 1T MoE, MuonClip, agentic data synthesis, joint RL. |
 | Moonshot AI | [Kimi K2.5](https://arxiv.org/abs/2602.02276) | Multimodal agentic model and Agent Swarm. |
+| Moonshot AI | [Kimi K2.6](https://www.moonshot.ai/) | Latest checked Kimi release; official page lists K2.6 as the current multimodal agentic model. |
 | Z.ai | [GLM-4.5](https://arxiv.org/abs/2508.06471) | ARC model: agentic, reasoning, coding; 355B total / 32B active MoE. |
 | Z.ai | [GLM-5](https://arxiv.org/html/2602.15763v1) | Long-horizon agentic engineering and sparse attention. |
+| Z.ai | [GLM-5.1](https://z.ai/blog/glm-5.1) | Long-horizon agentic engineering update. |
+| Z.ai | [GLM-5.2](https://z.ai/blog/glm-5.2) | Latest checked GLM release for long-horizon coding and agentic tasks. |
 | Meta | [Llama 3 Herd](https://arxiv.org/abs/2407.21783) | Dense 405B open-weight baseline with tool use, coding, and multilinguality. |
 | Meta | [Llama 4 release](https://ai.meta.com/blog/llama-4-multimodal-intelligence/) | Official release for open-weight multimodal MoE Scout/Maverick; no full official paper at release. |
 | Google | [Gemma 3 Technical Report](https://arxiv.org/abs/2503.19786) | Lightweight open-weight multimodal and long-context models. |
+| Google | [Gemma 4 model card](https://ai.google.dev/gemma/docs/core/model_card_4) | Latest checked Gemma family model card. |
+| Google | [Gemma 4 12B](https://deepmind.google/blog/introducing-gemma-4-12b-a-unified-encoder-free-multimodal-model/) | Unified encoder-free multimodal open model. |
+| Google | [DiffusionGemma](https://deepmind.google/blog/diffusiongemma-4x-faster-text-generation/) | Diffusion-style text generation model built on Gemma 4 research. |
 | Ai2 | [OLMo 2](https://arxiv.org/abs/2501.00656) | Fully open model flow, data, code, logs, and checkpoints. |
 | Ai2 | [Olmo 3](https://arxiv.org/abs/2512.13961) | Fully open reasoning, function calling, coding, and long-context model flow. |
+| Ai2 | [Olmo Hybrid](https://allenai.org/blog/olmohybrid) | Latest checked Ai2 release after Olmo 3, comparing hybrid models against transformer baselines. |
 | MiniMax | [MiniMax-01](https://arxiv.org/abs/2501.08313) | Lightning attention, MoE, million-token context. |
 | MiniMax | [MiniMax-M1](https://arxiv.org/abs/2506.13585) | Open-weight hybrid-attention reasoning and efficient test-time compute. |
+| MiniMax | [MiniMax-M2 Series](https://arxiv.org/html/2605.26494v1) | Agentic coding/cowork model family with 229.9B total / 9.8B active parameters. |
+| MiniMax | [MiniMax-M2.5](https://www.minimax.io/news/minimax-m25) | Latest checked MiniMax productivity/coding update. |
 | Mistral AI | [Mistral Large 2](https://mistral.ai/news/mistral-large-2407/) | Multilingual, code, and tool-use release baseline. |
-| Mistral AI | [Mistral Small 3.1](https://mistral.ai/news/mistral-small-3-1/) | Efficient open model with vision and 128K context. |
+| Mistral AI | [Mistral Small 3.1](https://mistral.ai/news/mistral-small-3-1/) | Earlier efficient open model with vision and 128K context. |
 | Mistral AI | [Magistral](https://arxiv.org/abs/2506.10910) | Mistral's reasoning model and RL pipeline. |
 | Mistral AI | [Ministral 3](https://arxiv.org/abs/2601.08584) | Dense small models and cascade distillation. |
 | Mistral AI | [Mistral 3](https://mistral.ai/news/mistral-3/) | Apache-2.0 dense small models plus Large 3 MoE. |
+| Mistral AI | [Mistral Small 4](https://mistral.ai/news/mistral-small-4/) | 119B/6.5B-active hybrid model for chat, coding, agents, and reasoning. |
+| Mistral AI | [Mistral Medium 3.5](https://docs.mistral.ai/models/model-cards/mistral-medium-3-5-26-04) | Latest checked open-weight Mistral flagship; dense 128B, 256K context. |
 | NVIDIA | [Nemotron-4 340B](https://arxiv.org/abs/2406.11704) | Synthetic data and reward-model release. |
 | NVIDIA | [Llama-Nemotron](https://arxiv.org/abs/2505.00949) | Efficient reasoning models derived from Llama. |
 | NVIDIA | [Nemotron 3](https://arxiv.org/abs/2512.20856) | Hybrid Mamba-Transformer MoE, 1M context, multi-environment RL. |
 | NVIDIA | [Nemotron 3 Super](https://arxiv.org/abs/2604.12374) | NVFP4, LatentMoE, MTP, throughput-oriented model design. |
+| NVIDIA | [Nemotron 3 Ultra](https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3-Ultra-Technical-Report.pdf) | Latest checked Nemotron report: 550B total / 55B active hybrid MoE. |
 | Cohere | [Aya Expanse](https://arxiv.org/abs/2412.04261) | Multilingual open-weight model report. |
 | Cohere | [Command A](https://arxiv.org/abs/2504.00698) | Enterprise RAG, tool use, multilinguality, and efficiency. |
 | Cohere | [Command A+](https://docs.cohere.com/docs/command-a-plus) | Open MoE enterprise model with vision and agentic tasks. |
 | ByteDance Seed | [Seed1.5-Thinking](https://arxiv.org/abs/2504.13914) | Thinking-before-answering reasoning model. |
 | ByteDance Seed | [Seed1.5-VL](https://arxiv.org/abs/2505.07062) | MoE VLM for multimodal reasoning and GUI/gameplay agents. |
+| ByteDance Seed | [Seed1.6](https://seed.bytedance.com/en/seed1_6) | Latest checked general-purpose Seed model family. |
+| ByteDance Seed | [Seed2.0 Model Card](https://lf3-static.bytednsdoc.com/obj/eden-cn/lapzild-tss/ljhwZthlaukjlkulzlp/seed2/0214/Seed2.0%20Model%20Card.pdf) | Newer ByteDance frontier model card focused on real-world reasoning. |
 | Tencent | [Hunyuan-A13B](https://github.com/Tencent-Hunyuan/Hunyuan-A13B) | Fine-grained MoE, efficient active-parameter design, reasoning modes. |
 
 ## Reasoning and Post-Training
@@ -132,7 +158,12 @@ evaluations, tool-use behavior, and release decisions.
 
 - [Qwen3-Coder-Next](https://arxiv.org/abs/2603.00729) - open-weight coding-agent model.
 - [Kimi K2](https://arxiv.org/abs/2507.20534) - open MoE with strong agentic and coding results.
+- [Kimi K2.6](https://www.moonshot.ai/) - latest checked Kimi multimodal agentic release.
 - [GLM-4.5](https://arxiv.org/abs/2508.06471) - ARC model for agentic, reasoning, and coding tasks.
+- [GLM-5.2](https://z.ai/blog/glm-5.2) - latest checked GLM long-horizon coding/agent release.
+- [Mistral Medium 3.5](https://mistral.ai/news/vibe-remote-agents-mistral-medium-3-5/) - open-weight dense 128B model powering Vibe remote agents.
+- [Grok 4.3](https://docs.x.ai/developers/models/grok-4.3) - xAI flagship for agentic tool calling and instruction following.
+- [Grok Build 0.1](https://docs.x.ai/overview) - xAI coding-agent model.
 - [Grok Code Fast 1 Model Card](https://data.x.ai/2025-08-26-grok-code-fast-1-model-card.pdf) - coding-agent-specific model card.
 - [SWE-bench](https://arxiv.org/abs/2310.06770) - real GitHub issue resolution benchmark.
 - [SWE-bench Verified](https://openai.com/index/introducing-swe-bench-verified/) - human-validated SWE-bench subset.
@@ -157,6 +188,9 @@ evaluations, tool-use behavior, and release decisions.
 
 - [Gemini 2.5 report](https://storage.googleapis.com/deepmind-media/gemini/gemini_v2_5_report.pdf)
 - [Gemini 3 Pro Model Card](https://deepmind.google/models/model-cards/gemini-3-pro/)
+- [Gemini 3.5 Flash](https://deepmind.google/models/gemini/flash/)
+- [Gemini 3.5 Live Translate](https://deepmind.google/models/model-cards/gemini-3-5-audio/)
+- [Gemini Omni](https://deepmind.google/blog/introducing-gemini-omni/)
 - [Qwen3-VL](https://arxiv.org/abs/2511.21631)
 - [Qwen3-Omni](https://arxiv.org/abs/2509.17765)
 - [Qwen3.5-Omni](https://arxiv.org/abs/2604.15804)
@@ -164,7 +198,9 @@ evaluations, tool-use behavior, and release decisions.
 - [Seed1.5-VL](https://arxiv.org/abs/2505.07062)
 - [Llama 4 release](https://ai.meta.com/blog/llama-4-multimodal-intelligence/)
 - [Gemma 3](https://arxiv.org/abs/2503.19786)
+- [Gemma 4](https://ai.google.dev/gemma/docs/core/model_card_4)
 - [Mistral Small 3.1](https://mistral.ai/news/mistral-small-3-1/)
+- [Mistral Small 4](https://docs.mistral.ai/models/model-cards/mistral-small-4-0-26-03)
 
 ## Data
 
@@ -289,6 +325,20 @@ directly to current model training and serving practice.
 - [Awesome-GraphRAG](https://github.com/DEEP-PolyU/Awesome-GraphRAG)
 - [LLMDataHub](https://github.com/Zjh-819/LLMDataHub)
 
+## Latestness Audit
+
+Checked again on 2026-06-28. Newer official work was found and added for
+OpenAI, Anthropic, Google DeepMind/Gemma, xAI, Qwen, Moonshot AI, Z.ai,
+Mistral, NVIDIA, MiniMax, and ByteDance Seed.
+
+No newer official model report or model card was found during this pass beyond:
+
+- DeepSeek: `DeepSeek-V4 Preview`
+- Meta Llama: `Llama 4`
+- Ai2 Olmo: `Olmo Hybrid` / `Olmo 3`
+- Cohere: `Command A+`
+- Tencent Hunyuan: `Hunyuan-A13B`
+
 ## Refresh Notes
 
 See [REFRESH_2026.md](REFRESH_2026.md) for removal and addition rationale.
@@ -298,4 +348,3 @@ See [REFRESH_2026.md](REFRESH_2026.md) for removal and addition rationale.
 This fork is intentionally opinionated. Add a resource only if it is
 foundational, current, maintained, or uniquely useful for understanding how
 modern LLMs are built and evaluated.
-
